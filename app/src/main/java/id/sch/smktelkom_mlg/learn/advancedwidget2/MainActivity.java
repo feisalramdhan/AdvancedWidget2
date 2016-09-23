@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
     EditText etNama;
     @BindView(R.id.textViewHasil)
     TextView tvHasil;
-    @BindColor(R.color.colorPrimary)
-    int colorPrimary;
+    @BindColor(R.color.colorAccent)
+    int colorAccent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
-        tvHasil.setTextColor(colorPrimary);
+        tvHasil.setTextColor(colorAccent);
     }
     @OnClick(R.id.buttonProses)
     public void doProcess()
